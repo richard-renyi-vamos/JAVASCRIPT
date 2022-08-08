@@ -1,0 +1,4 @@
+const items = ["Ball", "Bat", "Cup"]
+const randomIndex = Math.floor(Math.random()*items.length)
+items[randomIndex]
+console.log(randomIndex)
