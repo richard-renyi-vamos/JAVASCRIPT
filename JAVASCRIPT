@@ -1,0 +1,16 @@
+function generateRandomPassword(length) {
+  const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  let password = "";
+
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * charset.length);
+    password += charset.charAt(randomIndex);
+  }
+
+  return password;
+}
+
+const randomPassword = generateRandomPassword(10);
+console.log(randomPassword);
+
+ // CREATED WITH THE HELP OF OPEN-AI CHAT GPT: https://chat.openai.com/chat
